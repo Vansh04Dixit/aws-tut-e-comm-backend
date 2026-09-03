@@ -1,0 +1,11 @@
+name : Mt first action 
+
+on: 
+  push: 
+    jobs: 
+      hello: 
+        runs-on: ubuntu-latest
+        
+        steps: 
+        -name: Print Hello
+        run: echo "Hello from gitHub actions"
