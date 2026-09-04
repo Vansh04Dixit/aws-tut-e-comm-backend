@@ -48,6 +48,7 @@ export const createProduct = async (req , res) => {
         [name , price , category , description , imgURl]
     );
 
+    //testing my changes here 
     return res.status(201).json({
         message : "Product Created",
         data : result.rows[0],
