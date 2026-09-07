@@ -40,9 +40,8 @@ jobs:
             git pull origin prasanna
             npm ci
             pm2 restart aws-tut-e-comm-backend
-      
-      - name: Start server
-        run: npm start
+            sleep 5
+            curl --fail http://localhost:5000/api/products/all/products
 
       - name: Test Api
         run: curl http://localhost:5000/api/products/all/products
