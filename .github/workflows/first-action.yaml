@@ -41,6 +41,9 @@ jobs:
             npm ci
             pm2 restart aws-tut-e-comm-backend
       
+      - name: Start server
+        run: run npm start
+
       - name: Test Api
         run: curl http://localhost:5000/api/products/all/products
 
