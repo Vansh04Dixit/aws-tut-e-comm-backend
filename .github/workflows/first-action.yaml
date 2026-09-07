@@ -43,8 +43,5 @@ jobs:
             sleep 5
             curl --fail http://localhost:5000/api/products/all/products
 
-      - name: Test Api
-        run: curl http://localhost:5000/api/products/all/products
-
       - name: Confirmation
         run: echo "All Done!!"
