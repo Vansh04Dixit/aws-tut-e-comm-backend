@@ -35,7 +35,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
 
           script: |
-            cd ~/e-comm-tut-aws/aws-tut-e-comm-backend
+            cd ~/e-comm-ci-cd/aws-tut-e-comm-backend
             git checkout prasanna
             git pull origin prasanna
             npm ci
