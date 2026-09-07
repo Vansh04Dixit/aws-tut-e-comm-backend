@@ -24,6 +24,9 @@ jobs:
       - name: Check syntax
         run: find src -name "*.js" -type f -exec node --check {} \;
 
+      - name: Run lint
+        run: npm run lint
+
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1.2.0
         with: 
